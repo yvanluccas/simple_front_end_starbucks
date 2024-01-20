@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="circulo"></div>
+
+    <img src="./img/logo.png" alt="logo starbucks" class="logo" />
+
+    <div class="conteudo">
+      <div class="texto">
+        <h2>Não é apenas um café, é um <span>Starbucks      </span></h2>
+        <p>
+          Consequat cillum ad Lorem est ad mollit consequat ea adipisicing. Ad
+          dolor commodo adipisicing nostrud qui et deserunt aliquip elit
+          exercitation ullamco proident.
+        </p>
+        <a href="https://www.starbucks.com.br/"><button>Compre agora!</button></a>
+      </div>
+
+      <div class="imagem">
+        <img src="./img/img1.png" alt="copo starbucks" class="copoGrande" />
+      </div>
+    </div>
+
+    <div class="imagensPequenas">
+      <img src="./img/img-pequena1.png" alt="copo pequeno" class="copoPequeno verde"/>
+      <img src="./img/img-pequena2.png" alt="copo pequeno" class="copoPequeno amarelo"/>
+      <img src="./img/img-pequena3.png" alt="copo pequeno" class="copoPequeno rosa"/>
+    </div>
+  </body>
+
+  <script>
+    let imgCopo = document.querySelector(".copoGrande")
+    let copoVerde = document.querySelector('.verde')
+    let copoAmarelo = document.querySelector('.amarelo')
+    let copoRosa = document.querySelector('.rosa')
+    let circulo = document.querySelector(".circulo")
+    
+    copoAmarelo.addEventListener("click", () => {
+      imgCopo.src = "./img/img2.png"
+      circulo.style.background = "#eb7495"
+    })
+    copoVerde.addEventListener("click", () => {
+      imgCopo.src = "./img/img1.png"
+      circulo.style.background = "#017143"
+    })
+    copoRosa.addEventListener("click", () => {
+      imgCopo.src = "./img/img3.png"
+      circulo.style.background = "#d752b1"
+    })
+  </script>
+</html>
