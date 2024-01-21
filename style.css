@@ -1,32 +1,32 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* o tamanho agora levará em conta até a borda */
-    font-family: SF Pro;
+    box-sizing: border-box;
+    font-family: SF Pro; /* Configurações que abrangem toda a página*/
 }
 
 body {
     padding-top: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 100px; 
+    padding-right: 100px; /* Configurações referentes à configurações a todo os itens */
 }
 
 .conteudo {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Configurações gerais dos conteúdos de texto e da imagem principal */
 }
 
 .texto {
-    width: 600px;
+    width: 600px; /* Tamanho da caixa de texto */
 }
 
-.imagem {
+.imagemGrande {
     width: 600px;
     display: flex;
     justify-content: flex-end;
-    margin-top: 250px;
+    margin-top: 250px; /* Posicionamento da imagem principal */
 }
 
 .imagensPequenas {
@@ -34,60 +34,60 @@ body {
     justify-content: center;
     position: absolute;
     top: 84%;
-    left: 40%
+    left: 40% /* Posicionamento das imagens pequenas */
 }
 
 button {
-    background: #017143; /* cor de fundo */
-    color: #fff; /* cor da fonte */
-    border: none; /* borda */
-    padding: 8px; /* tamanho do botão */
-    border-radius: 16px; /* borda arredondada */
+    background: #017143;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 16px;
     width: 200px;
     height: 50px;
     font-size: 25px;
-    cursor: pointer
+    cursor: pointer /* Configurações do botão "Compre agora!" */
 }
 
 h2 {
     font-size: 54px;
     font-weight: 500;
-    margin-top: 80px;
+    margin-top: 80px; /* Configurações do texto principal da página */
 }
 
 p {
     font-size: 21px;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Configuração do parágrafo lorem ipsun */
 }
 
 span {
     color: #017143;
     font-size: 62px;
-    font-weight: 900;
+    font-weight: 900; /* Estilização somente da palavra "Starbucks" */
 }
 
 .logo {
-    width: 80px;
+    width: 80px; /* Tamanho da imagem da logo */
 }
 
 .copoGrande {
     width: 300px;
     z-index: 2;
-    position: absolute;
-    top: 35%
-}
+    position: absoludte;
+    top: 35% /* Posição e tamanho da imagem principal */
+} 
 
 .copoPequeno {
     width: 65px;
     justify-content: center;
     cursor: pointer;
-    transition: 1s;
+    transition: 1s; /* Tamanho, posição e tipo de cursor das imagens pequenas */
 }
 
 .copoPequeno:hover {
-    transform: translateY(-25px)
-}
+    transform: translateY(-25px) /* Animação das imagens pequenas */
+} 
 
 .circulo {
     background-color: #017143;
@@ -96,5 +96,5 @@ span {
     position: absolute;
     top: 0;
     left: 0;
-    clip-path: circle(600px at right 800px);
+    clip-path: circle(600px at right 800px); /* Configuração do círculo de fundo da imagem principal */
 }
