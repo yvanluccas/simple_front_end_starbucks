@@ -74,8 +74,8 @@ span {
 .copoGrande {
     width: 300px;
     z-index: 2;
-    position: absoludte;
-    top: 35% /* Posição e tamanho da imagem principal */
+    position: absolute;
+    top: 40% /* Posição e tamanho da imagem principal */
 } 
 
 .copoPequeno {
